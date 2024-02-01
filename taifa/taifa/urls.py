@@ -20,5 +20,6 @@ from taifa import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('taifa/', views.taifa_list)
+    path('taifa/', views.taifa_list),
+    path('taifa/<int:id>', views.taifa_list)
 ]
